@@ -1468,7 +1468,7 @@ function stopTermoUpdates() {
             else if (section.id === 'events-content' || section.id === 'news-content') {
                 // Reset white container height and show QR code/arrow for events and news
                 whiteContainer.style.height = '50%';
-
+                whiteContainer.style.opacity = '1';
                 // Find the specific QR code and arrow for the current section
                 const currentQRCode = document.querySelector(`#${section.id} .qr-code-img`);
                 const currentArrow = document.querySelector(`#${section.id} .arrow-icon`);
